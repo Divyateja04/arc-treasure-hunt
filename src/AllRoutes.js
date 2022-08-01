@@ -46,7 +46,7 @@ function AllRoutes() {
       component: (
         <Main
           value="2" 
-          url="https://i.ibb.co/3FSV4vJ/round2.png"
+          url="https://i.ibb.co/LR1JK2X/round2.png"
           content={
             <Fragment>
               Hiya! You finally find the place where your date is :){" "}
