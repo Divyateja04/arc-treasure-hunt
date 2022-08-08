@@ -21,14 +21,9 @@ function FinalPage() {
   }
 
   function redirect() {
-    navigate('/end-event21');
+    navigate('/https://www.youtube.com/watch?v=dQw4w9WgXcQ');
   }
 
-  // useEffect(() => {
-  //   updateDB();
-  //   redirect();
-  // },[]);
-  
   async function handleClick() {
     const today = new Date();
     const timeNow = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -51,14 +46,16 @@ function FinalPage() {
     localStorage.removeItem('time_started');
     localStorage.removeItem('time_ended');
     
-    navigate('/end-event21')
+    // navigate('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
   }
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.heading}>Well did your partner say yes or no?
       <br/>
       Not gonna lie, that's not upto the story maker to decide</h1>
-      <button className={styles.btn} onClick={handleClick}>Stop Timer</button>
+      <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+        <button className={styles.btn} onClick={handleClick}>Stop Timer</button>
+      </a>
     </div>
   );
 }
